@@ -53,15 +53,22 @@
                 android:text="="
                 android:textSize="25sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25sp"
+                android:id="@+id/txtResult"/>
+
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnCalcular"
             android:layout_width="150dp"
             android:layout_height="60dp"
+            android:onClick="calcularSuma"
             android:text="Calcular"
-            android:textSize="25sp"
-            android:paddingTop="15dp"
-            android:id="@+id/btnCalcular"/>
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
