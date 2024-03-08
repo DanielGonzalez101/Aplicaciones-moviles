@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnCacular;
 
     public void calcularSuma(View view) {
-        //Extraemos todos los valores de el xml
+        //Extraemos todos los valores de el xmla
         EditText edtVal1 = findViewById(R.id.edtVal1);
         EditText edtVal2 = findViewById(R.id.edtVal2);
         TextView txtResult = findViewById(R.id.txtResult);
