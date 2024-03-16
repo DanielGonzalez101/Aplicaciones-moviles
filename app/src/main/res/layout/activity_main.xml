@@ -3,12 +3,12 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
 
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,14 +60,23 @@
                 android:textSize="25sp"
                 android:id="@+id/txtResult"/>
 
+
         </LinearLayout>
-<!--HOla-->
+
         <Button
             android:id="@+id/btnCalcular"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:onClick="calcularSuma"
             android:text="Calcular"
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ir"
+            android:text="ir a otra pantalla"
+            android:id="@+id/btnOtraPantalla"
             android:textSize="25sp"/>
 
     </LinearLayout>

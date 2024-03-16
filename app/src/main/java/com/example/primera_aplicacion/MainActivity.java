@@ -19,23 +19,30 @@ public class MainActivity extends AppCompatActivity {
     //Este textView es para ver el resultado directamente no se ve si no hay un resultado
     TextView txtResult;
     //LLamammos boton calcular
-    Button btnCacular;
+    Button btnCalcular;
+
 
     public void calcularSuma(View view) {
-        //Extraemos todos los valores de el xmla
+        //Extraemos todos los valores de el xml
         EditText edtVal1 = findViewById(R.id.edtVal1);
         EditText edtVal2 = findViewById(R.id.edtVal2);
+
         TextView txtResult = findViewById(R.id.txtResult);
 
-        //Convertimos los valores a double para poder usarlos tipo numerico (sirve con otros tipos)
-        double value1 = Double.parseDouble(edtVal1.getText().toString());
-        double value2 = Double.parseDouble(edtVal2.getText().toString());
+        if (edtVal1.getText().toString().isEmpty() && edtVal2.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Estan vacios", Toast.LENGTH_LONG).show();
+            txtResult.setText("");
+        } else {
+            //Convertimos los valores a double para poder usarlos tipo numerico (sirve con otros tipos)
+            int value1 = Integer.parseInt(edtVal1.getText().toString());
+            int value2 = Integer.parseInt(edtVal2.getText().toString());
 
-        //Los sumamos
-        double sum = value1 + value2;
+            //Los sumamos
+            int sum = value1 + value2;
 
-        //LOs mostramos en la pantalla
-        txtResult.setText(String.valueOf(sum));
+            //Los mostramos en la pantalla
+            txtResult.setText(String.valueOf(sum));
+        }
     }
 
     @Override
