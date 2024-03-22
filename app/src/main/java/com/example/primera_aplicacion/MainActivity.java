@@ -4,6 +4,7 @@ import static android.util.Log.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
             //Los mostramos en la pantalla
             txtResult.setText(String.valueOf(sum));
         }
+    }
+
+    public void Siguiente (View view)  {
+        Intent siguiente = new Intent(this, SegundoActivity.class);
+        startActivity(siguiente);
     }
 
     @Override

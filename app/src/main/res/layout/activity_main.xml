@@ -72,12 +72,12 @@
             android:textSize="25sp"/>
 
         <Button
+            android:id="@+id/btnSiguiente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="ir"
-            android:text="ir a otra pantalla"
-            android:id="@+id/btnOtraPantalla"
-            android:textSize="25sp"/>
+            android:onClick="@string/BotonSiguiente"
+            android:text="@string/BotonSiguiente"
+            android:textSize="25sp" />
 
     </LinearLayout>
 
