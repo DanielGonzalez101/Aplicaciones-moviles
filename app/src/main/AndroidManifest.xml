@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Primera_Aplicacion"
         tools:targetApi="31">
         <activity
+            android:name=".Corte2"
+            android:exported="false" />
+        <activity
             android:name=".SegundoActivity"
             android:exported="false" />
         <activity

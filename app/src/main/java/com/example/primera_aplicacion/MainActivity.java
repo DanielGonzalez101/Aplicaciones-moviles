@@ -46,9 +46,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void Siguiente (View view)  {
+    public void Siguiente(View view) {
         Intent siguiente = new Intent(this, SegundoActivity.class);
         startActivity(siguiente);
+    }
+
+    public void irCorte2(View view) {
+        Intent corte2 = new Intent(this, Corte2.class);
+        startActivity(corte2);
     }
 
     @Override
